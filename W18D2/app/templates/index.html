@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {% for book in books_list %}
+        <h1>{{book}}</h1>
+    {% endfor %}
+    {% if not condition %}
+        <h1>Inside my condition</h1>
+    {% elif False %}
+        <h1>Inside my elif</h1>
+    {% else %}
+        <h1>inside my else</h1>
+    {% endif %}
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
