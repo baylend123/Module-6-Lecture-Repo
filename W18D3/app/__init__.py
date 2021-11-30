@@ -43,14 +43,8 @@ def seed_route():
         db.session.add(new_book)
         db.session.add(new_book2)
         # commit the changes to the db
-        db.session.commit()
-        publisher_book1 = publishers_books.insert().values(book_id=1, publisher_id=1)
-        publisher_book2 = publishers_books.insert().values(book_id=2, publisher_id=1)
-        publisher_book3 = publishers_books.insert().values(book_id=1, publisher_id=2)
-
-        db.session.execute(publisher_book1)
-        db.session.execute(publisher_book2)
-        db.session.execute(publisher_book3)
+        publisher.books.append(new_book)
+        publisher.books.append(new_book2)
         db.session.commit()
         return {'hey' : 'you did it'}
     except sqlalchemy.exc.IntegrityError as e:
