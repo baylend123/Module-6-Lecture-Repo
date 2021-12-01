@@ -18,5 +18,14 @@ interface to work with them
 '''
 
 '''
+Docker-compose (Friday)
+Easily spin up a collection of containers, and configure them 
+to communicate with one another
+'''
 
+'''
+Friday afternoon
+Mark Rodriguez talks to us about Mod7!
+Walkthrough the group project starter
+Group project planning
 '''
